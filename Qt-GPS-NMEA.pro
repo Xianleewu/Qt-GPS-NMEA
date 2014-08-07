@@ -13,8 +13,12 @@ TEMPLATE = app
 
 
 SOURCES += src/main.cpp\
-        src/gui/mainwindow.cpp
+        src/gui/mainwindow.cpp \
+    src/nmea.cpp \
+    src/sim908.cpp
 
-HEADERS  += src/gui/mainwindow.h
+HEADERS  += src/gui/mainwindow.h \
+    src/nmea.h \
+    src/sim908.h
 
 FORMS    += src/gui/mainwindow.ui
