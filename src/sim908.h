@@ -8,7 +8,7 @@ class SIM908 : public QObject
     Q_OBJECT
 public:
     explicit SIM908(QObject *parent = 0);
-    int sendATcommand(QString ATcommand, QString expected_answer, int timeout);
+    QString sendATcommand(QString ATcommand, int timeout);
 
 signals:
 
